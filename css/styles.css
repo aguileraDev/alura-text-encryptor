@@ -1,0 +1,148 @@
+@import url('https://fonts.googleapis.com/css2?family=Martel+Sans:wght@200;300;400;600;700;800;900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap');
+
+:root{
+    --bg-dark: #363636;
+    --bg-light: #fcfcfc;
+    --bg-blue: #1682db;
+    --button-hover: #439dff;
+    --font-title: "Montserrat", sans-serif;
+    --font-alt: "Martel", sans-serif;
+    --font-normal: "Nunito", sans-serif;
+    --font-dark: #262626;
+    --font-light: #fafafa;
+    --font-gray: #cccccc;
+    --font-size-s: 1rem;
+    --font-size-md: 1.25rem;
+    --font-size-lg: 2rem;
+    --padding-s: 0.25rem;
+    --padding-md: 0.5rem;
+    --padding-n: 1rem;
+    --padding-lg: 1.5rem;
+    --input-height: 6rem;
+    --shadow-basic: 2px 4px 10px 2.5px rgba(110, 110, 110, 0.10);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+
+body{
+    background-color: var(--bg-light);
+}
+
+button{
+    width: 100%;
+    padding: var(--padding-n);
+    background-color: var(--bg-blue);
+    color: var(--font-light);
+    font-size: var(--font-size-s);
+    border: none;
+    border-radius: 0.75rem;
+    -webkit-border-radius: 0.75rem;
+    -moz-border-radius: 0.75rem;
+    -ms-border-radius: 0.75rem;
+    -o-border-radius: 0.75rem;
+    font-family: var(--font-normal);
+    font-size: var(--font-size-s);
+    text-transform: uppercase;
+    font-weight: 600;
+    letter-spacing: 2.25px;
+    transition: .5s all;
+    -webkit-transition: .5s all;
+    -moz-transition: .5s all;
+    -ms-transition: .5s all;
+    -o-transition: .5s all;
+}
+
+button:hover{
+    background-color: var(--button-hover);
+}
+
+
+.title{
+    font-family: var(--font-title);
+    font-size: var(--font-size-md);
+    color: var(--font-dark);
+    text-align: center;
+}
+
+.text-center{
+    text-align: center;
+}
+
+.w-100{
+    width: 100%;
+}
+
+.flex{
+    display: flex;
+    flex-direction: row;
+}
+
+.image{
+    width: 70%;
+    display: block;
+    margin: auto;
+    padding: var(--padding-n);
+}
+
+.mb-s{
+    margin-bottom: 1rem;
+}
+
+.mb-md{
+    margin-bottom: 2rem;
+}
+.shadow-container{
+    box-shadow: var(--shadow-basic);
+}
+
+.container{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    padding: var(--padding-n);
+    overflow: hidden;
+}
+
+.mxh-50{
+    max-height: 50vh;
+}
+
+.border{
+    border: 1px solid red;
+}
+
+.input{
+    width: 100%;
+    height: var(--input-height);
+    padding: var(--padding-md);
+    border-radius: 0.66rem;
+    -webkit-border-radius: 0.66rem;
+    -moz-border-radius: 0.66rem;
+    -ms-border-radius: 0.66rem;
+    -o-border-radius: 0.66rem;
+    border: 0.1px solid var(--bg-dark);
+    opacity: 50%;
+}
+
+.history{
+    font-family: var(--font-alt);
+    height: 30vh;
+    background-image: url("../images/1.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    overflow: hidden;
+    padding: var(--padding-n);
+    flex-direction: column;
+    
+}
+
+.history ul{
+    padding: var(--padding-n);
+    list-style: none;
+}

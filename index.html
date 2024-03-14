@@ -7,32 +7,41 @@
     <title>Encriptador</title>
 </head>
 <body>
-    <header>
+    <header class="w-100 flex mb-s shadow-container">
         <figure>
-            <img src="images/alura-challenges.png" alt="" srcset="" style="width: 125px;">
+            <img class="image" src="images/alura-challenges.png" alt="" srcset="">
         </figure>
     </header>
-    <main>
-        <section>
-            <form action="">
+    <h1 class="title">Encriptador de texto</h1>
+    <main class="mb-md">
+        <section class="container mxh-50">
+            <form class="w-100" action="">
                 <div>
                     <label for="encrypt"></label>
-                    <input type="text" name="encrypt" id="">
+                    <input class="input text-center mb-md" type="text" name="encrypt" id="" placeholder="Ingresa el texto que desees encriptar o desencriptar">
                 </div>
                 <div>
                     <div>
-                        <button type="button">Encriptar</button>
+                        <button class="mb-s" type="button">Encriptar</button>
                     </div>
                     <div>
-                        <button type="button">desencriptar</button>
+                        <button class="mb-s" type="button">desencriptar</button>
                     </div>
                 </div>
             </form>
         </section>
     </main>
-    <section class="history">
-
+    <section class="w-100 flex history mxh-50 mb-md">
+        <ul>
+            <li>Texto encriptado</li>
+            <li>Texto encriptado</li>
+            <li>Texto encriptado</li>
+            <li>Texto encriptado</li>
+        </ul>
     </section>
+    <div class="container">
+        <button class="mb-s" type="button">Copiar</button>
+    </div>
     <footer>
 
     </footer>
