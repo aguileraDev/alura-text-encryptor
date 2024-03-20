@@ -79,6 +79,9 @@ button:hover{
     background-color: var(--button-hover);
 }
 
+button:disabled{
+    opacity: .2;
+}
 
 header{
     height: 7.5rem;
@@ -140,18 +143,19 @@ header{
 }
 
 #text{
+    height: 90%;
     color: var(--font-dark);
     font-family: var(--font-title);
-    font-size: var(--font-size-n);
+    font-size: var(--font-size-XS);
     text-align: center;
     margin: auto;
-    font-weight: 800;
+    font-weight: 700;
     opacity: .8;
 }
 .container{
     width: 100%;
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     padding: var(--padding-md);
     overflow: hidden;
     border-radius: 0.5rem;
@@ -160,7 +164,14 @@ header{
     -ms-border-radius: 0.5rem;
     -o-border-radius: 0.5rem;
 }
-
+.container h4{
+    color: var(--font-dark);
+    font-family: var(--font-alt);
+    font-size: var(--font-size-xs);
+    margin-bottom: 0.5rem;
+    font-weight: 800;
+    opacity: .75;
+}
 .input{
     width: 100%;
     height: var(--input-height);
@@ -193,7 +204,7 @@ header{
 .history{
     font-family: var(--font-alt);
     width: 100%;
-    height: 14rem;
+    height: 16rem;
     padding: var(--padding-n);
     flex-direction: column;
     justify-content: space-around;
@@ -340,20 +351,10 @@ footer .wrapper{
         box-shadow: var(--shadow-container);
         
     }
-
-    .text-copy{
-        box-shadow: none;
-    }
-
-    #text{
-        opacity: 0;
-    }
-    
     .history{
         display: flex;
-        width: 18%;
+        width: 25%;
         height: 25rem;
-        background-image: url("../images/1.png");
         background-position: center;
         background-repeat: no-repeat;
         background-size: cover;
@@ -363,6 +364,18 @@ footer .wrapper{
         box-shadow: var(--shadow-container);
         
     }
+
+    .text-copy{
+        box-shadow: none;
+    }
+
+    #text{
+        width: 100%;
+        text-align: center;
+        font-weight: 600;
+        opacity: 1;
+    }
+    
 
     button{
         width: var(--button-desktop);
