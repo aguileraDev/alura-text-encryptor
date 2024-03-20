@@ -1,11 +1,13 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/styles.css">
     <title>Encriptador</title>
 </head>
+
 <body>
     <header class="w-100 flex mb-s shadow-container">
         <figure>
@@ -14,38 +16,58 @@
     </header>
     <h1 class="title">Encriptador de texto</h1>
     <main class="mb-md">
-        <section class="container mxh-50">
+        <section class="container mb-md ">
             <form class="w-100" action="">
                 <div>
                     <label for="encrypt"></label>
-                    <input class="input text-center mb-md" type="text" name="encrypt" id="" placeholder="Ingresa el texto que desees encriptar o desencriptar">
+                    <textarea class="input text-center" cols="1" rows="3" name="encrypt" id="" maxlength="255" placeholder="Ingresa el texto que desees encriptar o desencriptar"></textarea>
                 </div>
-                <div>
+                <div class="btn-flex">
                     <div>
-                        <button class="mb-s" type="button">Encriptar</button>
+                        <button id="btn-encrypt" class="mb-s" type="button">Encriptar</button>
                     </div>
                     <div>
-                        <button class="mb-s" type="button">desencriptar</button>
+                        <button id="btn-decrypt" class="mb-s" type="button">desencriptar</button>
                     </div>
                 </div>
             </form>
         </section>
+        <section class="history">
+            <div class="text-copy">
+                <div class="flex mb-md">
+                   <div id="text">Ningun mensaje fue encontrado</div>
+                </div>
+            </div>
+            <div class="flex text-center justify-center">
+                <button id="btn-copy" class="copy" type="button">Copiar</button>
+            </div>
+        </section>
     </main>
-    <section class="w-100 flex history mxh-50 mb-md">
-        <ul>
-            <li>Texto encriptado</li>
-            <li>Texto encriptado</li>
-            <li>Texto encriptado</li>
-            <li>Texto encriptado</li>
-        </ul>
-    </section>
-    <div class="container">
-        <button class="mb-s" type="button">Copiar</button>
-    </div>
-    <footer>
 
+    <footer class="flex">
+        <div class="subtitle">
+            <h2>Oracle Next Education - G6</h2>
+        </div>
+        <div class="wrapper">
+            <div class="footer-wrapper mb-s">
+                <h4>Html 5</h4>
+                <figure class="img-1"></figure>
+            </div>
+            <div class="footer-wrapper mb-s">
+                <h4>Css</h4>
+                <figure class="img-2"></figure>
+            </div>
+            <div class="footer-wrapper mb-s">
+                <h4>JavaScript</h4>
+                <figure class="img-3"></figure>
+            </div>
+        </div>
+        <div class="author">
+            <p>Made with &#10084; by <a href="https://github.com/aguileraDev" target="_blank">aguileraDev</a></p>
+        </div>
     </footer>
 
     <script src="js/app.js"></script>
 </body>
+
 </html>
